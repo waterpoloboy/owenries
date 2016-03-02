@@ -11,7 +11,7 @@ function GameManager(size, InputManager, Actuator) {
   this.inputManager = new InputManager;
   this.actuator     = new Actuator;
 
-  this.startTiles   =12;
+  this.startTiles   =5;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
